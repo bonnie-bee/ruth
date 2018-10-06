@@ -1,0 +1,28 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#ruthPic{
+    position: relative;
+    left: 15%;
+    margin-top: 5%;
+    width: 500px;
+    height: 700px;
+    object-fit: contain;
+}
+
+#ruthQuote{
+    position: relative;
+    left: 27%;
+    width: 400px;
+    height: 700px;
+}
+
+p{
+    position: relative;
+    top: 0;    ;
+}
+div{
+    display: inline-block
+}

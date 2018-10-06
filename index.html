@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ruth Would Do It</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div id="ruthPic"></div>
+    <div id="ruthQuote"></div>
+
+<script>
+
+let quotes = ["You want me to complain? Alright then, Fuck this. Fuck you; fuck all of you and your sniveling self pity, and fuck all your lousy parents. Fuck my lousy parents while were at it. Fuck my selfish, bohemian sister and her fucking bliss. Fuck my legless grandmother. Fuck my dead husband, and my lousy children with their nasty little secrets. And fuck you Robby for dragging me to this terrible place and not letting me have a snickers bar. I'm going to get something to eat!", "You'll have to help yourselves. I'm out of control.", "Oh, go give yourself a handjob!", "Well, whatever you're going through, I hope you don't blame me.", "Chickpeas give me gas.", "I’m not fine. I’m a whore!"]
+
+const ruthPic = document.getElementById("ruthPic");
+const ruthQuote = document.getElementById("ruthQuote");
+
+function newPic(){
+    let i = Math.floor(Math.random()*6+1)
+    let elem = document.createElement("img");
+    elem.src = "./images/ruth"+i+".jpg";
+    elem.alt = "Ruth Fisher";
+    return ruthPic.appendChild(elem)
+}
+
+function newQuote() {
+    let i = Math.floor(Math.random()*5);
+    let elem = document.createElement("h1");
+    let textNode = document.createTextNode(quotes[i]);
+    elem.appendChild(textNode)
+    return ruthQuote.appendChild(elem)    
+}
+newPic();
+newQuote();
+</script>
+</body>
+</html>
