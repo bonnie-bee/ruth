@@ -5,24 +5,33 @@ img {
 
 #ruthPic{
     position: relative;
-    left: 15%;
+    /* left: 15%; */
     margin-top: 5%;
     width: 500px;
     height: 700px;
     object-fit: contain;
+    left: 10%
+
 }
 
 #ruthQuote{
     position: relative;
-    left: 27%;
+    /* left: 27%; */
     width: 400px;
     height: 700px;
+    left: 15%
+
 }
 
+#ruthTitle{
+    font-size: 4em;
+    text-align: center
+    
+}
 p{
     position: relative;
-    top: 0;    ;
+    top: 0;    
 }
-div{
-    display: inline-block
+.ruthDiv{
+    display: inline-block;
 }
